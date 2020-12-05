@@ -1,0 +1,377 @@
+:root {
+  --accent-color: #2196f3;
+  --accent-color-text: #000000;
+  --second-color-text: #757575;
+  --third-color-text: #ffff;
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
+  --third-font: "Oleo Script", cursive;
+}
+body {
+  font-family: var(--main-font);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-tel:hover,
+.header-tel:focus,
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--accent-color-text);
+  margin-bottom: 50px;
+}
+
+/*===========Header===========*/
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+.address-list {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 93px;
+}
+.navigation-list-item:not(:last-child),
+.addres-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header .address {
+  margin-left: auto;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: var(--second-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--accent-color-text);
+  text-decoration: none;
+}
+.logo-web {
+  font-family: var(--second-font);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.385;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--accent-color);
+}
+.navigation-list-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--accent-color-text);
+  text-decoration: none;
+}
+
+.header-tel,
+.header-mail {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--second-color-text);
+  text-decoration: none;
+}
+.address {
+  font-style: normal;
+}
+/*=========== End Header===========*/
+/*===========Hero===========*/
+.hero {
+  text-align: center;
+  padding-bottom: 210px;
+  background-color: #2f303a;
+}
+.hero-heading {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.367;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--third-color-text);
+  margin-bottom: 40px;
+  padding-top: 200px;
+}
+.hero-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background: var(--accent-color);
+  color: var(--third-color-text);
+  min-width: 200px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 32px;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--third-color-text);
+  color: var(--accent-color);
+}
+/*===========End Hero===========*/
+/*===========Advantages===========*/
+.advantages {
+  padding-top: 94px;
+  justify-content: flex-start;
+}
+.advantages-list {
+  display: flex;
+  text-align: center;
+}
+.advantages-list-item {
+  padding-left: 10px;
+}
+
+.advantages-list-heading {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--accent-color-text);
+  padding-bottom: 10px;
+}
+.advantages-list-item-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--second-color-text);
+  width: 270px;
+  height: 75px;
+}
+/*===========End Advantages===========*/
+/*===========Directions===========*/
+.directions {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.directions-list {
+  display: flex;
+  justify-content: space-between;
+}
+/*===========End Directions===========*/
+/*===========Command===========*/
+.command {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.command-list-item:not(:first-child) {
+  padding-left: 30px;
+}
+
+.command-photo {
+  height: 260px;
+  width: 270px;
+  align-items: flex-start;
+}
+.command-list {
+  display: flex;
+  justify-content: space-between;
+}
+.command-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.command-names {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: var(--accent-color-text);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.command-position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: var(--second-color-text);
+  text-align: center;
+}
+
+/*===========End Command===========*/
+/*===========Footer===========*/
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-list-item {
+  margin-bottom: 9px;
+}
+.footer-logo-link {
+  margin-bottom: 20px;
+}
+.footer-logo {
+  font-family: var(--second-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--third-color-text);
+}
+.foorer-logo-web {
+  font-family: var(--second-font);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.385;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--accent-color);
+}
+.footer-address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--third-color-text);
+}
+
+.footer-contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--second-color-text);
+}
+
+/*===========End Footer===========*/
+/*===========Button===========*/
+.portfolio-list-btn:focus,
+.portfolio-list-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--third-color-text);
+}
+.portfolio {
+  padding-top: 94px;
+  margin-bottom: 94px;
+}
+.portfolio-list {
+  display: flex;
+  text-align: center;
+
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.portfolio-list-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--accent-color-text);
+  margin-right: 8px;
+  min-height: 38px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  border: none;
+}
+/*===========End Button===========*/
+/*===========Progects examples===========*/
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+.examples-list-img {
+  height: 294px;
+  width: 370px;
+}
+.examples-list {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+.examples-list:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+.card-content {
+  padding: 20px 24px;
+}
+.examples-list-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--accent-color-text);
+}
+.examples-list-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--second-color-text);
+}
+/*===========End Progects examples===========*/
