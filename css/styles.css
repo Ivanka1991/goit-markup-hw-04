@@ -137,17 +137,17 @@ img {
 /*=========== End Header===========*/
 /*===========Hero===========*/
 .hero {
-  text-align: center;
-  padding-bottom: 210px;
-  background-color: #2f303a;
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0, 4),
-      rgba(47, 48, 58, 0, 4)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  text-align: center;
+  padding-bottom: 210px;
+  background-color: #2f303a;
 }
 .hero-heading {
   font-size: 44px;
@@ -261,6 +261,26 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-color-text);
   text-align: center;
+  margin-bottom: 16px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #ffff;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /*===========End Command===========*/
