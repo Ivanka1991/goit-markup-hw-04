@@ -66,6 +66,10 @@ img {
   padding-bottom: 30px;
   border-bottom: 1px solid #ececec;
 }
+.header-logo {
+  width: 145px;
+  height: 31px;
+}
 .navigation {
   display: flex;
   align-items: center;
@@ -92,25 +96,7 @@ img {
   display: flex;
   align-items: center;
 }
-.logo {
-  font-family: var(--second-font);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--accent-color-text);
-  text-decoration: none;
-}
-.logo-web {
-  font-family: var(--second-font);
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 1.385;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--accent-color);
-}
+
 .navigation-list-link {
   font-size: 14px;
   font-weight: 500;
@@ -130,10 +116,26 @@ img {
   text-align: left;
   color: var(--second-color-text);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.header-tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 .address {
   font-style: normal;
 }
+
 /*=========== End Header===========*/
 /*===========Hero===========*/
 .hero {
@@ -144,7 +146,7 @@ img {
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   padding-bottom: 210px;
   background-color: #2f303a;
@@ -186,6 +188,7 @@ img {
 .advantages-list {
   display: flex;
   text-align: center;
+  justify-content: space-between;
 }
 .advantages-list-item {
   padding-left: 10px;
@@ -210,6 +213,25 @@ img {
   color: var(--second-color-text);
   width: 270px;
   height: 75px;
+}
+.advanteges-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+.advanteges-box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  padding-top: 25px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.advanteges-box-icon:not(:first-child) {
+  margin-left: 30px;
 }
 /*===========End Advantages===========*/
 /*===========Directions===========*/
@@ -241,10 +263,12 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.command-card {
+.command-info {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #ffff;
 }
+
 .command-names {
   font-size: 16px;
   font-weight: 500;
@@ -271,6 +295,7 @@ img {
   width: 44px;
   height: 44px;
   background-color: #ffff;
+  fill: #afb1b8;
 }
 .social-links {
   display: flex;
@@ -282,8 +307,51 @@ img {
   width: 20px;
   height: 20px;
 }
+.social-list-link:focus,
+.social-list-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--third-color-text);
+}
 
 /*===========End Command===========*/
+/*===========Clients===========*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list-item:focus,
+.clients-list-item:hover,
+.clients-box:focus,
+.clients-box:hover {
+  fill: var(--accent-color);
+  background-color: var(--third-color-text);
+  border-color: var(--accent-color);
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients-logo {
+  width: 50px;
+  height: 45px;
+}
+.clients-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+}
+.clients-list-item {
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-links {
+  fill: #afb1b8;
+}
+/*===========End Clients===========*/
 /*===========Footer===========*/
 .footer {
   background-color: #2f303a;
