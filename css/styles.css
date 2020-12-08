@@ -336,10 +336,7 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-.clients-logo {
-  width: 50px;
-  height: 45px;
-}
+
 .clients-box {
   display: flex;
   align-items: center;
@@ -365,10 +362,10 @@ img {
 .footer-list-item {
   margin-bottom: 9px;
 }
-.footer-logo-link {
-  margin-bottom: 20px;
+.footer-logo {
+  width: 145px;
+  height: 31px;
 }
-
 .footer-address {
   font-size: 14px;
   font-weight: 400;
@@ -394,7 +391,7 @@ img {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: #afb1b8;
+  fill: #ffff;
 }
 .footer-links {
   display: flex;
@@ -413,9 +410,11 @@ img {
 .footer-box {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
 .footer-list {
   margin-right: 70px;
+  padding-top: 20px;
 }
 .icon-list-item:not(:first-child) {
   padding-left: 10px;
