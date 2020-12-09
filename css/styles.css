@@ -480,10 +480,13 @@ img {
 .examples-list:nth-child(n + 7) {
   margin-bottom: 0;
 }
-.shadow:hover,
-.shadow:focus {
+.examples-link:hover,
+.examples-link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.examples-link {
+  display: block;
 }
 .card-content {
   padding: 20px 24px;
